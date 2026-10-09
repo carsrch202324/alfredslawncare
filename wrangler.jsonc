@@ -1,0 +1,13 @@
+// Cloudflare Worker config for the static site. Deploy with: npx wrangler deploy
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bold-scene-9931",
+  "compatibility_date": "2026-10-01",
+  // Static-assets-only Worker: no script, Cloudflare serves the files directly.
+  // The site lives at the repo root; .assetsignore keeps everything that is
+  // not part of the website (config, git metadata, tooling) from being uploaded.
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page"
+  }
+}
