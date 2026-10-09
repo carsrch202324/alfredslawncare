@@ -1,0 +1,16 @@
+# Files in the repo root that are NOT part of the website and must not be
+# published as static assets by `wrangler deploy` (gitignore syntax).
+.assetsignore
+.git
+.github
+.gitignore
+.wrangler
+.dev.vars*
+.env*
+node_modules
+wrangler.json
+wrangler.jsonc
+wrangler.toml
+package.json
+package-lock.json
+*.md
